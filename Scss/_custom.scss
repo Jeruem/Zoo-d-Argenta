@@ -7,10 +7,11 @@ $secondary: #FFFBAC;
 $dark: #6B5F5F ;
 $light: #8BB385 ;
 $info: #106513;
+$warning: white;
 
 
 $font-family-sans-serif : "roboto" , sans-serif !default ;
-$font-family-serif: "Montaga" , serif !default;
+$font-family-serif: "poppins" , serif !default;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
