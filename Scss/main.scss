@@ -1,1 +1,17 @@
 @import 'custom';
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+main{
+    margin-bottom: 260px;
+}
+
+footer{
+    padding: 15px ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
