@@ -11971,7 +11971,7 @@ html {
 }
 
 main {
-  margin-bottom: 260px;
+  margin-bottom: 280px;
 }
 
 footer {
@@ -11979,6 +11979,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  overflow: auto;
 }
 
 p {
@@ -11988,6 +11989,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12016,10 +12018,10 @@ p {
   text-align: justify;
 }
 
-.hero-scene2 {
+.hero-sceneS {
   position: relative;
 }
-.hero-scene2::before {
+.hero-sceneS::before {
   content: "";
   position: absolute;
   top: 0;
@@ -12030,7 +12032,7 @@ p {
   background-size: cover;
   filter: brightness(0.5);
 }
-.hero-scene2 .hero-scene2-content {
+.hero-sceneS .hero-sceneS-content {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -12038,6 +12040,62 @@ p {
   justify-content: center;
   margin-top: 0px;
 }
-.hero-scene2 * {
+.hero-sceneS * {
   position: relative;
+}
+
+.hero-scenem {
+  position: relative;
+}
+.hero-scenem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Images/Crocohero.jpg);
+  background-size: cover;
+  filter: brightness(0.5);
+}
+.hero-scenem .hero-scenem-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+.hero-scenem * {
+  position: relative;
+}
+
+.hero-scenej {
+  position: relative;
+}
+.hero-scenej::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Images/tigrehero.jpg);
+  background-size: cover;
+  filter: brightness(0.5);
+}
+.hero-scenej .hero-scenej-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+}
+.hero-scenej * {
+  position: relative;
+}
+
+.form-label {
+  color: #4B3B10;
 }/*# sourceMappingURL=main.css.map */

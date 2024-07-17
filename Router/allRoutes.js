@@ -5,12 +5,20 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html"),
     new Route("/Le_restaurant", "Notre restaurant", "/pages/Le_restaurant.html"),
     new Route("/Les_animaux", "Les animaux", "/pages/Les_animaux.html"),
-    new Route("/Savane", "La savane", "/pages/Savane.html"),
-    new Route("/Marais", "Les marais", "/pages/Marais.html"),
-    new Route("/Jungle", "La jungle", "/pages/Jungle.html"),
-    new Route("/BiomeSavane1", "Zone 1", "/pages/BiomeSavane1.html"),
-    new Route("/BiomeSavane2", "Zone 2", "/pages/BiomeSavane2.html"),
-    new Route("/BiomeSavane3", "Zone 3", "/pages/BiomeSavane3.html"),
+    new Route("/Savane", "La savane", "/pages/Savane/Savane.html"),
+    new Route("/Marais", "Les marais", "/pages/Marais/Marais.html"),
+    new Route("/Jungle", "La jungle", "/pages/Jungle/Jungle.html"),
+    new Route("/Connexion", "Page de connexion utilisateur", "/pages/auth/Connexion.html"),
+    new Route("/Creationcompte", "Page de création de compte utilisateur", "/pages/auth/Creationcompte.html"),
+    new Route("/editpassword", "Modification du mot de passe", "/pages/auth/editpassword.html"),
+    new Route("/BiomeSavane1", "Zone A", "/pages/Savane/BiomeSavane1.html"),
+    new Route("/BiomeSavane2", "Zone B", "/pages/Savane/BiomeSavane2.html"),
+    new Route("/BiomeSavane3", "Zone C", "/pages/Savane/BiomeSavane3.html"),
+    new Route("/BiomeMarais1", "Zone D", "/pages/Marais/BiomeMarais1.html"),
+    new Route("/BiomeMarais2", "Zone E", "/pages/Marais/BiomeMarais2.html"),
+    new Route("/BiomeJungle1", "Zone F", "/pages/Jungle/BiomeJungle1.html"),
+    new Route("/BiomeJungle2", "Zone G", "/pages/Jungle/BiomeJungle2.html"),
+    
     
 ];
 
