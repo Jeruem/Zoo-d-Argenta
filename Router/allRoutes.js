@@ -9,7 +9,7 @@ export const allRoutes = [
     new Route("/Marais", "Les marais", "/pages/Marais/Marais.html"),
     new Route("/Jungle", "La jungle", "/pages/Jungle/Jungle.html"),
     new Route("/Connexion", "Page de connexion utilisateur", "/pages/auth/Connexion.html"),
-    new Route("/Creationcompte", "Page de création de compte utilisateur", "/pages/auth/Creationcompte.html"),
+    new Route("/Creationcompte", "Page de création de compte utilisateur", "/pages/auth/Creationcompte.html", "/Js/auth/creationcompte.js"),
     new Route("/editpassword", "Modification du mot de passe", "/pages/auth/editpassword.html"),
     new Route("/BiomeSavane1", "Zone A", "/pages/Savane/BiomeSavane1.html"),
     new Route("/BiomeSavane2", "Zone B", "/pages/Savane/BiomeSavane2.html"),

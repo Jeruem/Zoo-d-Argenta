@@ -12098,4 +12098,22 @@ p {
 
 .form-label {
   color: #4B3B10;
+}
+
+.image {
+  position: relative;
+}
+.image:hover .action-image-buttons {
+  opacity: 1;
+}
+.image .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */
