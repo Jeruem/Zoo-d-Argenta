@@ -8,7 +8,7 @@ btnConnexion.addEventListener("click", checkCredentials);
 function checkCredentials(){
     // Appel de l'API//
     if (mailInput.value== "test@mail.com" && passwordInput.value == "123"){
-        alert("t'es connecté frere");
+       
         //Il faudra récupérer le vrai token
 
         const token = "lkjsdngfljsqdnglkjsdbglkjqskjgkfjgbqslkfdgbskldfgdfgsdgf";
@@ -18,6 +18,20 @@ function checkCredentials(){
 
     
         setCookie(RoleCookieName, "admin", 7);
+        window.location.replace("/");
+    }
+
+    if (mailInput.value== "yosh@mail.com" && passwordInput.value == "1234"){
+       
+        //Il faudra récupérer le vrai token
+
+        const token = "lkjsdngfljsqdnglkjsdbglkjqskjgkfjgbqslkfdgbskldfgdfgsdgf";
+        setToken(token);
+
+        //placer ce token en cookie
+
+    
+        setCookie(RoleCookieName, "employe", 7);
         window.location.replace("/");
     }
 
