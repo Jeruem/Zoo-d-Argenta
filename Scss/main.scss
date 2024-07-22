@@ -145,6 +145,34 @@ p{
     }
 }
 
+.hero-scener{
+    position:relative;
+    &::before{ 
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:100%;
+        height:100%;
+        background-image: url(../Images/restaurant_hero.jpg) ;
+        background-size:cover;
+        filter: brightness(0.5);
+    }
+
+    .hero-scener-content{
+
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    *{
+        position:relative;
+    }
+}
 .form-label{
     color: $primary
 }
@@ -172,3 +200,28 @@ p{
         transition: all 0.3s;
     }
 }
+
+.rating {
+    direction: rtl;
+ }
+
+ .rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+ }
+
+ .heart{
+    font-size: 3em;
+ }
+
+
+

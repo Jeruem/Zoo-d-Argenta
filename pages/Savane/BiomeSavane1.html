@@ -103,7 +103,7 @@
             <div class="col text-center p-5">
                 <button type="button" class="btn btn-primary text-secondary" data-bs-toggle="modal" data-bs-target="#SanteAnimauxmodal">Voir les animaux</button>
             </div>
-            <div class="col text-center p-5 " data-show="admin">
+            <div class="col text-center p-5 " data-show="admin, employe, veterinaire">
                 <button type="button" class="btn btn-primary text-secondary" data-bs-toggle="modal" data-bs-target="#Modifinfosmodal">Modifier les informations</button>
                 <button type="button" class="btn btn-primary text-secondary " data-bs-toggle="modal" data-bs-target="#Editionphotomodal">Ajouter une photo</button>
           </div>
@@ -214,30 +214,33 @@
         <div class="col text-center pb-4 ">
             <button type="button" class="btn btn-primary text-secondary" data-bs-toggle="modal" data-bs-target="#SanteAnimauxmodal">Voir les animaux</button>
         </div>
-        <div class="col text-center pb-4 " data-show="admin">
+        <div class="col text-center pb-4 " data-show="admin, employe, veterinaire">
             <button type="button" class="btn btn-primary text-secondary" data-bs-toggle="modal" data-bs-target="#Modifinfosmodal">Modifier les informations</button>
             <button type="button" class="btn btn-primary text-secondary " data-bs-toggle="modal" data-bs-target="#Editionphotomodal">Ajouter une photo</button>
         </div>
     </div>
            
       
-               
+    <div class="container row p-5 rounded bg-primary text-center ">
+      <div class="col  text-center">
+        <a href="/Savane" class="btn btn-info text-secondary">Retour</a>
+      </div>
+      <div class="col  text-center">
+        <a href="/BiomeSavane2" class="btn btn-info text-secondary">Zone suivante</a>
+      </div>
+    </div>
+           
        
 
-        <div class="row pt-5">
-            <div class="col  text-center">
-                <a href="/Savane" class="btn btn-primary text-secondary">Retour</a>
-            </div>
-            <div class="col  text-center">
-                <a href="/BiomeSavane2" class="btn btn-primary text-secondary">Zone suivante</a>
-            </div>
-        </div>
+    
             
     
         
     
     
 </section>
+
+
 
   
   <!-- Modal Edition photo -->
@@ -305,21 +308,25 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form  >
-                <div class="mb-3">
-                  <label for="Emailinput" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="Emailinput" placeholder="Tenshinhan@gmail.com">
-                  
-                </div>
-                <div class="mb-3">
-                  <label for="Passwordinput" class="form-label">Mot de passe</label>
-                  <input type="password" class="form-control" id="Passwordinput">
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Connexion</button>
-                </div>
-                
-              </form>
+            <u><h3>Nourriture</h3></u>
+            <p>
+              Viande fraîche, Fruits, Suppléments vitaminés.
+
+            </p>
+            <u><h3>Horaires de repas</h3></u>
+            <p>
+
+              12 h 30 / 19 h 30
+            </p>
+            <u><h3>Etat de Santé des animaux de l'enclos</h3></u>
+           
+            <span id="heart" class="heart text-danger">♥&nbsp♥&nbsp♥&nbsp♥&nbsp♥</span>
+           
+            <p>
+
+              Les animaux de l'enclos sont en forme, aucune anomalie n'a été observée.
+
+            </p>
         </div>
         
       </div>
@@ -336,18 +343,22 @@
             </div>
             <div class="modal-body">
                 <form  >
-                    <div class="mb-3">
-                      <label for="Emailinput" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="Emailinput" placeholder="Tenshinhan@gmail.com">
-                      
-                    </div>
-                    <div class="mb-3">
-                      <label for="Passwordinput" class="form-label">Mot de passe</label>
-                      <input type="password" class="form-control" id="Passwordinput">
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Connexion</button>
-                    </div>
+                  <div class="mb-3"  >
+                    <label for="NourritureArea" class="NourritureArea-label" >Nourriture</label>
+                    <textarea class="form-control" id="NourritureArea" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3" >
+                    <label for="CommentArea" class="CommentArea-label" >Heure d'alimentation</label>
+                    <textarea class="form-control" id="CommentArea" rows="3"></textarea>
+                  </div>
+                  <div class="mb-3" >
+                    <label for="SanteArea" class="SanteArea-label" >Observation de l'état de santé</label>
+                    <textarea class="form-control" id="SanteArea" rows="3"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary text-secondary">Enregistrer</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-primary text-secondary ">Annuler</button>
+                </div>
                     
                   </form>
             </div>

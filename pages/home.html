@@ -11,18 +11,18 @@
 <section>
     <article>
         <div class="container p-3">
-            <h2 class="text-center">Bienvenue au Zoo d'Argenta</h2>
+            <h2 class="text-center">Bienvenue au Zoo d'Argenta</h2> <br>
             
                 <div class="text-center">
                     <p>
-                        Découvrez les animaux et leurs habitats ! <br/>
+                        Découvrez les animaux et leurs habitats avec notre visite guidée ! <br/> <br>
 
 Le parc se divise en 3 grandes parties qui sont liées à des biomes différents, la Savane, la Jungle ou encore les Marais.
 
 
                     </p>
                 </div>
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col  text-center">
                     <img class="w-50" src="/Images/lion-babies-4046716_1280.jpg" alt="">
                     </div>
@@ -106,7 +106,7 @@ Le parc se divise en 3 grandes parties qui sont liées à des biomes différents
 
                     <div class="row">
                         <div class="col  text-center">
-                        <img class="w-100 " src="/Images/Avis.jpg" alt="image d'une famille">
+                        <img class="w-100  " src="/Images/Avis.jpg" alt="image d'une famille">
                         </div>
                    
                 </div>
@@ -114,7 +114,7 @@ Le parc se divise en 3 grandes parties qui sont liées à des biomes différents
         </div>
 
         <div class="text-center p-5">
-            <a href="/" class="btn btn-primary text-secondary p-2">Laisser un commentaire <i class="bi bi-pencil-square"></i></a>
+            <a href="/" class="btn btn-primary text-secondary p-2" data-bs-toggle="modal" data-bs-target="#Commentairemodal">Laisser un commentaire <i class="bi bi-pencil-square"></i></a>
         </div> 
         
         
@@ -123,3 +123,155 @@ Le parc se divise en 3 grandes parties qui sont liées à des biomes différents
 </section>
 
 
+
+<section>
+    <article>
+        <div class="container ">
+
+            <h2 class="text-center p-3">Les avis</h2>
+
+            <span id="visitorname" class="p-3">Donald Trunks  </span> 
+            <span class="text-warning">★ ★ ★ ★ ★</span>
+
+            <hr>
+            
+            "Ce zoo est incroyable ! J'ai particulièrement apprécié la section des animaux africains. Les girafes et les lions sont magnifiques. Les panneaux d'information sont très instructifs. Bravo à toute l'équipe pour ce travail exceptionnel."
+            
+            <br><br>
+
+            <span id="visitorname" class="p-3">Nathalie Robert </span> 
+            <span class="text-warning">★ ★ ★ ★ ★</span>
+
+            <hr>
+            
+            "Une visite mémorable ! Le parc est propre et bien aménagé, avec de nombreux espaces ombragés pour se reposer. Les démonstrations avec les oiseaux de proie étaient fascinantes. Une expérience éducative et divertissante pour toute la famille."
+
+            <br><br>
+
+            <span id="visitorname" class="p-3">Thomas Patrick </span> 
+            <span class="text-warning">★ ★ ★ ★ ★ </span>
+
+            <hr>
+
+            "Nous avons passé une superbe journée au zoo. Les enclos aquatiques pour les hippopotames et les otaries sont impressionnants. Le personnel est passionné et cela se voit. Un endroit idéal pour les amoureux des animaux."
+            
+            <br><br>
+            
+            <span id="visitorname" class="p-3">Sophie Morceau </span> 
+            <span class="text-warning">★ ★ ★ ★ ★ </span>
+
+            <hr>
+            
+            "Le zoo est magnifique et très bien organisé. Les enfants ont adoré le contact avec les animaux dans la mini-ferme. Les espaces verts et les aires de pique-nique sont un vrai plus. Une sortie réussie pour petits et grands !"
+
+            <br><br>
+
+            <span id="visitorname" class="p-3">Élodie Gravier </span> 
+            <span class="text-warning">★ ★ ★ ★ ★</span>
+
+            <hr>
+
+            "Une journée fantastique au zoo ! Les enclos sont spacieux et bien entretenus. Les animaux semblent heureux et en bonne santé. Le personnel est très sympathique et bien informé. Mes enfants ont adoré les spectacles et les ateliers pédagogiques. Nous reviendrons certainement !"
+
+        </div>
+
+    </article>
+</section>
+
+<div class="text-center p-4 ">
+    <button type="button" class="btn btn-primary text-secondary" data-bs-toggle="modal" data-bs-target="#GestionCommentmodal">Gestion des commentaires</button>
+</div>
+
+
+
+
+<!-- Modal Laisser un commentaire -->
+
+<div class="modal fade" id="Commentairemodal" tabindex="-1" aria-labelledby="Commentairemodallabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="Commentairemodal">Laisser un commentaire</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form  >
+                <div class="mb-3" ><label for="NameInput" class="form-label">Nom et Prénom</label>
+                    <input type="text" class="form-control" id="NameInput" placeholder="Nom et Prénom"></div>
+                
+                
+                <div class="mb-3" >
+                    <label for="SanteArea" class="SanteArea-label" >Rédiger votre commentaire</label>
+                    <textarea class="form-control" id="SanteArea" rows="3"></textarea>
+                </div>
+                  
+            </form>
+
+            <div class="rating text-center"><!--
+            --><a title="Donner 5 étoiles">☆</a><!--
+            --><a  title="Donner 4 étoiles">☆</a><!--
+            --><a  title="Donner 3 étoiles">☆</a><!--
+            --><a  title="Donner 2 étoiles">☆</a><!--
+            --><a  title="Donner 1 étoile">☆</a>
+         </div>
+            <div class="text-center">
+                <a href="/"><button href type="submit" class="btn btn-primary" id="btn-validate-comment" >Publier</button></a>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+
+
+    <!-- Modal Gestion des commentaires -->
+
+<div class="modal fade" id="GestionCommentmodal" tabindex="-1" aria-labelledby="GestionCommentmodallabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="GestionCommentmodal">Gérer les commentaires</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+            <h3>Commentaires en attente de modération</h3>
+            <span id="visitorname" class="p-3">Thomas Patrick </span> 
+            <span class="text-warning">★ ★ ★ ★ ★ </span>
+            <span><button>Valider <i class="bi bi-check-lg bg-info"></i></span></button>
+            <span><button>Supprimer <i class="bi bi-x bg-danger"></i></button></span>
+
+            <hr>
+
+            "Nous avons passé une superbe journée au zoo. Les enclos aquatiques pour les hippopotames et les otaries sont impressionnants. Le personnel est passionné et cela se voit. Un endroit idéal pour les amoureux des animaux."
+            
+            <br><br>
+            
+            <span id="visitorname" class="p-3">Sophie Morceau </span> 
+            <span class="text-warning">★ ★ ★ ★ ★ </span>
+            <span><button>Valider <i class="bi bi-check-lg bg-info"></i></span></button>
+            <span><button>Supprimer <i class="bi bi-x bg-danger"></i></button></span>
+
+            <hr>
+            
+            "Le zoo est magnifique et très bien organisé. Les enfants ont adoré le contact avec les animaux dans la mini-ferme. Les espaces verts et les aires de pique-nique sont un vrai plus. Une sortie réussie pour petits et grands !"
+
+            <br><br>
+
+            <span id="visitorname" class="p-3">Élodie Gravier </span> 
+            <span class="text-warning">★ ★ ★ ★ ★</span>
+            <span><button>Valider <i class="bi bi-check-lg bg-info"></i></span></button>
+            <span><button>Supprimer <i class="bi bi-x bg-danger"></i></button></span>
+
+            <hr>
+
+            "Une journée fantastique au zoo ! Les enclos sont spacieux et bien entretenus. Les animaux semblent heureux et en bonne santé. Le personnel est très sympathique et bien informé. Mes enfants ont adoré les spectacles et les ateliers pédagogiques. Nous reviendrons certainement !"
+
+            <div class="text-center p-4">
+                <button type="submit" class="btn btn-primary text-secondary" id="btn-validate-comment" >Confirmer les modifications</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
