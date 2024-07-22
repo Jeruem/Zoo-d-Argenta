@@ -2,15 +2,14 @@ import Route from "./Route.js";
 
 //Définir ici vos routes
 export const allRoutes = [
-    new Route("/", "Accueil", "/pages/home.html", []),
-    new Route("/Le_restaurant", "Notre restaurant", "/pages/Le_restaurant.html", []),
+    new Route("/", "Accueil", "/pages/général/home.html", []),
+    new Route("/Lerestaurant", "Notre restaurant", "/pages/général/Lerestaurant.html", []),
     new Route("/Les_animaux", "Les animaux", "/pages/Les_animaux.html", []),
     new Route("/Savane", "La savane", "/pages/Savane/Savane.html", []),
     new Route("/Marais", "Les marais", "/pages/Marais/Marais.html", []),
     new Route("/Jungle", "La jungle", "/pages/Jungle/Jungle.html", []),
     new Route("/Connexion", "Page de connexion utilisateur", "/pages/auth/Connexion.html", ["disconnected", "admin", "veterinaire", "employe"], "/js/connexion.js" ),
     new Route("/Moncompte", "Mon compte", "/pages/auth/Moncompte.html", ["admin", "employe"]),
-    new Route("/Creationcompte", "Page de création de compte utilisateur", "/pages/auth/Creationcompte.html",["admin"], "/js/Creationcompte.js"),
     new Route("/editpassword", "Modification du mot de passe", "/pages/auth/editpassword.html", ["admin", "employe", "veterinaire"]),
     new Route("/BiomeSavane1", "Zone A", "/pages/Savane/BiomeSavane1.html", []),
     new Route("/BiomeSavane2", "Zone B", "/pages/Savane/BiomeSavane2.html", []),
